@@ -1,11 +1,13 @@
 import 'package:flutter/material.dart';
+import 'package:hive_flutter/hive_flutter.dart';
 import 'package:template/data/db/hive/adapter.dart';
 import 'package:template/ui/pages/home.dart';
 
-void main() {
+void main() async {
   HiveAdapter hiveAdapter = HiveAdapter();
   hiveAdapter.init();
   // hiveAdapter.openBox()
+  // await Hive.initFlutter();
   runApp(const MyApp());
 }
 
@@ -14,7 +16,6 @@ class MyApp extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    HiveAdapter hiveAdapter = HiveAdapter();
     return MaterialApp(
       title: 'Flutter Demo',
       theme: ThemeData(

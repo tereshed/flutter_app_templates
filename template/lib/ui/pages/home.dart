@@ -1,6 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:template/data/db/hive/adapter.dart';
-import 'package:hive_flutter/hive_flutter.dart';
 
 class MyHomePage extends StatefulWidget {
   const MyHomePage({
